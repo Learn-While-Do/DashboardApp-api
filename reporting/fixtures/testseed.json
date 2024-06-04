@@ -1,0 +1,50 @@
+[
+  {
+    "model": "reporting.Order",
+    "fields": {
+      "amount": "10",
+      "description": "Test product 1",
+      "created_time": "2024-05-22 16:40:27.827953"
+    }
+  },
+  {
+    "model": "reporting.Order",
+    "fields": {
+      "amount": "20",
+      "description": "Test product 2",
+      "created_time": "2024-05-23 16:40:27.827953"
+    }
+  },
+  {
+    "model": "reporting.Order",
+    "fields": {
+      "amount": "15",
+      "description": "Test product 3",
+      "created_time": "2024-05-24 16:40:27.827953"
+    }
+  },
+  {
+    "model": "reporting.Order",
+    "fields": {
+      "amount": "20",
+      "description": "Test product 4",
+      "created_time": "2024-05-23 16:40:27.827953"
+    }
+  },
+  {
+    "model": "reporting.Order",
+    "fields": {
+      "amount": "15",
+      "description": "Test product 5",
+      "created_time": "2024-05-24 16:40:27.827953"
+    }
+  },
+  {
+    "model": "reporting.Order",
+    "fields": {
+      "amount": "5",
+      "description": "Test product 6",
+      "created_time": "2024-05-25 16:40:27.827953"
+    }
+  }
+]
