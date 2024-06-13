@@ -1,0 +1,288 @@
+[
+    {
+      "model": "reporting.Category",
+      "pk": 1,
+      "fields": {
+        "name": "Gear",
+        "description": "Equipment needed for successfull practice"
+      }
+    },
+    {
+      "model": "reporting.Category",
+      "pk": 2,
+      "fields": {
+        "name": "Clothing",
+        "description": "All kind of clothing for all seasons"
+      }
+    },
+    {
+      "model": "reporting.Category",
+      "pk": 3,
+      "fields": {
+        "name": "Spare parts",
+        "description": "Replacable mechanical parts"
+      }
+    },
+    {
+      "model": "reporting.Category",
+      "pk": 4,
+      "fields": {
+        "name": "Manuals",
+        "description": "Descriptive instructional books"
+      }
+    },
+    {
+      "model": "reporting.Supplier",
+      "pk": 1,
+      "fields": {
+        "company_name": "Vandalay Industries",
+        "contact_name": "George Constanza",
+        "contact_title": "Sales Manager",
+        "address": "100 Elm Street",
+        "city": "London",
+        "region": "England",
+        "postal_code": "111000",
+        "country": "UK",
+        "phone": "00998877",
+        "email": "george@vandalay.com",
+        "webpage": "www.vandalay.com"
+      }
+    },
+
+    {
+      "model": "reporting.Supplier",
+      "pk": 2,
+      "fields": {
+        "company_name": "Ocean Parfumes",
+        "contact_name": "Cosmo Kramer",
+        "contact_title": "Sales Manager",
+        "address": "200 Long Street",
+        "city": "New York",
+        "region": "New York",
+        "postal_code": "111000",
+        "country": "USA",
+        "phone": "11223344",
+        "email": "cosmo@parfumes.com",
+        "webpage": "www.parfumes.com"
+      }
+    },
+
+    {
+      "model": "reporting.Supplier",
+      "pk": 3,
+      "fields": {
+        "company_name": "Comedy Central",
+        "contact_name": "Jerry Seinfeld",
+        "contact_title": "Author",
+        "address": "3245 Ocean Boulevard",
+        "city": "Los Angeles",
+        "region": "Los Angeles",
+        "postal_code": "23451",
+        "country": "USA",
+        "phone": "959959959",
+        "email": "jerry@seinfeld.com",
+        "webpage": "www.comedy.com"
+      }
+    },
+    {
+      "model": "reporting.Customer",
+      "pk": 1,
+      "fields": {
+        "first_name": "John",
+        "last_name": "Lennon",
+        "title": "Mr",
+        "gender": "Masculine",
+        "address": "Park Avenue 12",
+        "city": "New York",
+        "region": "New York",
+        "postal_code": "11000",
+        "country": "USA",
+        "phone": "091 901",
+        "email": "johnlennon@testing.com"
+      }
+    },
+    {
+      "model": "reporting.Customer",
+      "pk": 2,
+      "fields": {
+        "first_name": "Paul",
+        "last_name": "McCartney",
+        "title": "Sir",
+        "gender": "Masculine",
+        "address": "Loyd Street 12",
+        "city": "London",
+        "region": "London",
+        "postal_code": "23000",
+        "country": "UK",
+        "phone": "091 901",
+        "email": "paulmccartney@testing.com"
+      }
+    },
+    {
+      "model": "reporting.Customer",
+      "pk": 3,
+      "fields": {
+        "first_name": "Ringo",
+        "last_name": "Star",
+        "title": "Sir",
+        "gender": "Masculine",
+        "address": "Blueberry Street 12",
+        "city": "London",
+        "region": "London",
+        "postal_code": "23000",
+        "country": "UK",
+        "phone": "091 901",
+        "email": "ringostar@testing.com"
+      }
+    },
+    {
+      "model": "reporting.Customer",
+      "pk": 4,
+      "fields": {
+        "first_name": "George",
+        "last_name": "Harrison",
+        "title": "Sir",
+        "gender": "Masculine",
+        "address": "Abbay Road 1",
+        "city": "London",
+        "region": "London",
+        "postal_code": "23000",
+        "country": "UK",
+        "phone": "091 101",
+        "email": "georgeharrison@testing.com"
+      }
+    },
+    
+    
+    {
+      "model": "reporting.Product",
+      "pk": 1,
+      "fields": {
+        "product_name": "Jacket",
+        "supplier_id": 1,
+        "category_id": 2,
+        "unit_price": 120,
+        "units_in_stock": 4,
+        "units_on_order": 2
+      }
+    },
+    
+    {
+      "model": "reporting.Product",
+      "pk": 2,
+      "fields": {
+        "product_name": "Helmet",
+        "supplier_id": 1,
+        "category_id": 2,
+        "unit_price": 220,
+        "units_in_stock": 10,
+        "units_on_order": 0
+      }
+    },
+    
+    {
+      "model": "reporting.Product",
+      "pk": 3,
+      "fields": {
+        "product_name": "Gardening book",
+        "supplier_id": 2,
+        "category_id": 4,
+        "unit_price": 10,
+        "units_in_stock": 100,
+        "units_on_order": 25
+      }
+    },
+
+    {
+      "model": "reporting.Product",
+      "pk": 4,
+      "fields": {
+        "product_name": "Shirt",
+        "supplier_id": 2,
+        "category_id": 2,
+        "unit_price": 40,
+        "units_in_stock": 20,
+        "units_on_order": 10
+      }
+    },
+
+    {
+      "model": "reporting.Product",
+      "pk": 5,
+      "fields": {
+        "product_name": "Computer Book",
+        "supplier_id": 1,
+        "category_id": 4,
+        "unit_price": 15,
+        "units_in_stock": 90,
+        "units_on_order": 15
+      }
+    },
+    
+    {
+      "model": "reporting.Order",
+      "pk": 1,
+      "fields": {
+        "customer_id": 1,
+        "product_id": 1,
+        "order_date": "2023-11-02 17:30:06.189915+00:00",
+        "required_date":"2023-11-02 17:30:06.189915+00:00",
+        "shipped_name":"John Lennon",
+        "shipped_address":"Park Avenue",
+        "shipped_city":"New York",
+        "shipped_postal_code":"21000",
+        "shipped_country":"USA"
+      }
+    },
+    {
+      "model": "reporting.Order",
+      "pk": 2,
+      "fields": {
+        "customer_id": 3,
+        "product_id": 2,
+        "order_date": "2023-11-02 17:30:06.189915+00:00",
+        "required_date":"2023-11-02 17:30:06.189915+00:00",
+        "shipped_name":"Ringo Star",
+        "shipped_address":"Blueberry Street 12",
+        "shipped_city":"London",
+        "shipped_postal_code":"23000",
+        "shipped_country":"UK"
+      }
+    },
+
+    {
+      "model": "reporting.Order",
+      "pk": 3,
+      "fields": {
+        "customer_id": 1,
+        "product_id": 2,
+        "order_date": "2023-11-03 17:30:06.189915+00:00",
+        "required_date":"2023-11-04 17:30:06.189915+00:00",
+        "shipped_name":"John Lennon",
+        "shipped_address":"Park Avenue",
+        "shipped_city":"New York",
+        "shipped_postal_code":"21000",
+        "shipped_country":"USA"
+      }
+    },
+
+    {
+      "model": "reporting.Order",
+      "pk": 4,
+      "fields": {
+        "customer_id": 2,
+        "product_id": 3,
+        "order_date": "2023-11-02 17:30:06.189915+00:00",
+        "required_date":"2023-11-02 17:30:06.189915+00:00",
+        "shipped_name":"Paul McCartney",
+        "shipped_address":"Loyd Street 12",
+        "shipped_city":"London",
+        "shipped_postal_code":"23000",
+        "shipped_country":"UK"
+      }
+    }
+ 
+  ]
+
+  
+
