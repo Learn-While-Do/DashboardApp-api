@@ -17,7 +17,7 @@ class OrderSerializer(serializers.ModelSerializer):
                   'shipped_country']
     
     def to_representation(self, instance):
-        self.fields['custemer'] = CustomerSerializer(read_only=True)
+        self.fields['customer'] = CustomerSerializer(read_only=True)
         self.fields['product'] =  ProductSerializer(read_only=True)
         return super(OrderSerializer, self).to_representation(instance)
         
@@ -43,7 +43,8 @@ class SupplierSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Supplier
-        fields = ['company_name',
+        fields = ['id',
+                  'company_name',
                   'contact_name',
                   'contact_title',
                   'address',
@@ -61,6 +62,7 @@ class ProductSerializer(serializers.ModelSerializer):
         model = Product
         fields = ['id',
                   'product_name',
+                  'supplier',
                   'category',
                   'unit_price',
                   'units_in_stock',
