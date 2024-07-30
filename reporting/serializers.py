@@ -81,3 +81,20 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = ['id', 
                   'name', 
                   'description']
+        
+class CountryFilterSerializer(serializers.ModelSerializer):
+    class Meta: 
+        model = Order
+        fields = ['shipped_country']
+
+class CityFilterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Order
+        fields = ['shipped_city']
+
+
+class ProductPriceFilterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = ['unit_price']
+

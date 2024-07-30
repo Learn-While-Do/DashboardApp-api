@@ -45,8 +45,6 @@ class Product(models.Model):
     supplier = models.ForeignKey(Supplier, on_delete=models.DO_NOTHING, null=True)
     category = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
 
-    class Meta:
-        ordering = ['category', 'unit_price']
 
 class Order(models.Model):
 
