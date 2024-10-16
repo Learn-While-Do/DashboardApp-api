@@ -163,4 +163,4 @@ class ResetUserPasswordView(APIView):
         request.user.set_password(new_passwd)
         request.user.save()
 
-        return Response({"response": "Success"}, status=status.HTTP_200_OK)
+        return Response({"response": "Successfully updated password"}, status=status.HTTP_200_OK)
